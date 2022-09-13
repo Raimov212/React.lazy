@@ -1,6 +1,6 @@
-import React, { Suspense } from "react";
+import React, { Suspense,lazy } from "react";
 
-const Button = React.lazy(() => import("./Button"));
+const Button = lazy(() => import("./Button"));
 
 const LazyComponent = () => {
   return (
